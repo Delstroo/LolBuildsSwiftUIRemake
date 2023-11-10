@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FA3B6A6F-AD13-4CDA-87BE-D70F5F0DCD9C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA3124BC-F202-4979-8D55-E3A68C310144"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LolBuilds/ItemsHomeView/View/ItemHomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6AB8615-684E-4E8F-9CC5-721A23C0FF1A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LolBuilds/BuildsHomeView/Components/BuildsCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "A6AB8615-684E-4E8F-9CC5-721A23C0FF1A - e657e260b812b235"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Bool) -&gt; () in LolBuilds.BuildsCell.body.getter : some"
+                  moduleName = "LolBuilds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstunmccray/Documents/iOSDev/LolBuildsSwiftUI/LolBuilds/LolBuilds/BuildsHomeView/Components/BuildsCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "844">
+               </Location>
+               <Location
+                  uuid = "A6AB8615-684E-4E8F-9CC5-721A23C0FF1A - e657e260b812b235"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Bool) -&gt; () in LolBuilds.BuildsCell.body.getter : some"
+                  moduleName = "LolBuilds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstunmccray/Documents/iOSDev/LolBuildsSwiftUI/LolBuilds/LolBuilds/BuildsHomeView/Components/BuildsCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "840">
+               </Location>
+               <Location
+                  uuid = "A6AB8615-684E-4E8F-9CC5-721A23C0FF1A - e657e260b812b235"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Bool) -&gt; () in LolBuilds.BuildsCell.body.getter : some"
+                  moduleName = "LolBuilds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstunmccray/Documents/iOSDev/LolBuildsSwiftUI/LolBuilds/LolBuilds/BuildsHomeView/Components/BuildsCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "972">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FAEE02C6-BB8D-4FF5-9CBC-949856E6EEEE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LolBuilds/BuildsHomeView/Components/BuildsCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "FAEE02C6-BB8D-4FF5-9CBC-949856E6EEEE - e657e260b812b254"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Bool) -&gt; () in LolBuilds.BuildsCell.body.getter : some"
+                  moduleName = "LolBuilds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstunmccray/Documents/iOSDev/LolBuildsSwiftUI/LolBuilds/LolBuilds/BuildsHomeView/Components/BuildsCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "688">
+               </Location>
+               <Location
+                  uuid = "FAEE02C6-BB8D-4FF5-9CBC-949856E6EEEE - e657e260b812b254"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Bool) -&gt; () in LolBuilds.BuildsCell.body.getter : some"
+                  moduleName = "LolBuilds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstunmccray/Documents/iOSDev/LolBuildsSwiftUI/LolBuilds/LolBuilds/BuildsHomeView/Components/BuildsCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "816">
+               </Location>
+               <Location
+                  uuid = "FAEE02C6-BB8D-4FF5-9CBC-949856E6EEEE - e657e260b812b254"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Bool) -&gt; () in LolBuilds.BuildsCell.body.getter : some"
+                  moduleName = "LolBuilds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstunmccray/Documents/iOSDev/LolBuildsSwiftUI/LolBuilds/LolBuilds/BuildsHomeView/Components/BuildsCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "672">
+               </Location>
+               <Location
+                  uuid = "FAEE02C6-BB8D-4FF5-9CBC-949856E6EEEE - e657e260b812b254"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Bool) -&gt; () in LolBuilds.BuildsCell.body.getter : some"
+                  moduleName = "LolBuilds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstunmccray/Documents/iOSDev/LolBuildsSwiftUI/LolBuilds/LolBuilds/BuildsHomeView/Components/BuildsCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "812">
+               </Location>
+               <Location
+                  uuid = "FAEE02C6-BB8D-4FF5-9CBC-949856E6EEEE - e657e260b812b254"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Bool) -&gt; () in LolBuilds.BuildsCell.body.getter : some"
+                  moduleName = "LolBuilds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstunmccray/Documents/iOSDev/LolBuildsSwiftUI/LolBuilds/LolBuilds/BuildsHomeView/Components/BuildsCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "804">
+               </Location>
+               <Location
+                  uuid = "FAEE02C6-BB8D-4FF5-9CBC-949856E6EEEE - e657e260b812b254"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Bool) -&gt; () in LolBuilds.BuildsCell.body.getter : some"
+                  moduleName = "LolBuilds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstunmccray/Documents/iOSDev/LolBuildsSwiftUI/LolBuilds/LolBuilds/BuildsHomeView/Components/BuildsCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "944">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "20FD6ED7-3EC7-4437-BA0C-0FF54D170B19"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LolBuilds/BuildsHomeView/ViewModel/BuildsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "updateBuildController(buttonIndex:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "20FD6ED7-3EC7-4437-BA0C-0FF54D170B19 - 477dd07d6297bdb2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LolBuilds.BuildController.updateBuildController(buttonIndex: Swift.Int) -&gt; ()"
+                  moduleName = "LolBuilds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstunmccray/Documents/iOSDev/LolBuildsSwiftUI/LolBuilds/LolBuilds/BuildsHomeView/ViewModel/BuildsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "2544">
+               </Location>
+               <Location
+                  uuid = "20FD6ED7-3EC7-4437-BA0C-0FF54D170B19 - 477dd07d6297bdb2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LolBuilds.BuildController.updateBuildController(buttonIndex: Swift.Int) -&gt; ()"
+                  moduleName = "LolBuilds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstunmccray/Documents/iOSDev/LolBuildsSwiftUI/LolBuilds/LolBuilds/BuildsHomeView/ViewModel/BuildsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "2560">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "164E145C-1F8B-4EB5-8902-F7F7A3BD9A62"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LolBuilds/ChampionHomeView/View/ChampionHomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "164E145C-1F8B-4EB5-8902-F7F7A3BD9A62 - a5bb2cb493a0f291"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (LolBuilds.ChampionInfo) -&gt; SwiftUI.Button&lt;&lt;&lt;opaque return type of SwiftUI.View.listRowBackground&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(Swift.Optional&lt;&#x3c4;_1_0&gt;) -&gt; some&gt;&gt;.0&gt; in closure #3 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;LolBuilds.ChampionInfo&gt;, LolBuilds.ChampionInfo, SwiftUI.Button&lt;&lt;&lt;opaque return type of SwiftUI.View.listRowBackground&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(Swift.Optional&lt;&#x3c4;_1_0&gt;) -&gt; some&gt;&gt;.0&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.ignoresSafeArea(_: SwiftUI.SafeAreaRegions, edges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationBarHidden(Swift.Bool) -&gt; some&gt;&gt;.0 in LolBuilds.ChampionHomeView.body.getter : some"
+                  moduleName = "LolBuilds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstunmccray/Documents/iOSDev/LolBuildsSwiftUI/LolBuilds/LolBuilds/ChampionHomeView/View/ChampionHomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "836">
+               </Location>
+               <Location
+                  uuid = "164E145C-1F8B-4EB5-8902-F7F7A3BD9A62 - a5bb2cb493a0f2b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (LolBuilds.ChampionInfo) -&gt; SwiftUI.Button&lt;&lt;&lt;opaque return type of SwiftUI.View.listRowBackground&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(Swift.Optional&lt;&#x3c4;_1_0&gt;) -&gt; some&gt;&gt;.0&gt; in closure #3 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;LolBuilds.ChampionInfo&gt;, LolBuilds.ChampionInfo, SwiftUI.Button&lt;&lt;&lt;opaque return type of SwiftUI.View.listRowBackground&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(Swift.Optional&lt;&#x3c4;_1_0&gt;) -&gt; some&gt;&gt;.0&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.ignoresSafeArea(_: SwiftUI.SafeAreaRegions, edges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationBarHidden(Swift.Bool) -&gt; some&gt;&gt;.0 in LolBuilds.ChampionHomeView.body.getter : some"
+                  moduleName = "LolBuilds"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/delstunmccray/Documents/iOSDev/LolBuildsSwiftUI/LolBuilds/LolBuilds/ChampionHomeView/View/ChampionHomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "836">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EFD0FAE5-0EE5-44CB-BAF5-0E45889EC147"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LolBuilds/ItemsHomeView/Components/ItemCellView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "647B35E9-4D40-461F-9941-715C4D09A4BF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LolBuilds/ChampionHomeView/View/ChampionHomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
+            landmarkName = "showOnboardingIfNeccisary()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "514CC975-DA5A-425A-ABD4-CCDBB5E570BD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LolBuilds/ChampionHomeView/View/ChampionHomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "showOnboardingIfNeccisary()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
