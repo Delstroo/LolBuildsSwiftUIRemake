@@ -49,9 +49,8 @@ class BuildController: ObservableObject {
     func deleteBuild(build: Build) {
         
         guard let index = builds.firstIndex(of: build) else { return }
-        
         builds.remove(at: index)
-        
+        builds = []
         saveToPersistenceStore()
     }
     
