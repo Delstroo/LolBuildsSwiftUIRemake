@@ -143,7 +143,7 @@ struct ChampionHomeView: View {
                     .background(Color.backgroundColor)
                     .safeAreaInset(edge: .top) {
                         EmptyView()
-                            .frame(height: isModallyPresented ? 120 : 100)
+                            .frame(height: isModallyPresented ? 120 : 60)
                     }
                     .sheet(isPresented: $shouldShowDetailView, content: {
                         if let selectedChampion {
