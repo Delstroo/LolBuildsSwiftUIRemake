@@ -420,24 +420,8 @@
 			isa = PBXGroup;
 			children = (
 				1BE6C3712AFEE0AE00E27324 /* View */,
-				1BE6C3702AFEE0A900E27324 /* Components */,
-				1BE6C36F2AFEE0A300E27324 /* ViewModel */,
 			);
 			path = Onboarding;
-			sourceTree = "<group>";
-		};
-		1BE6C36F2AFEE0A300E27324 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		1BE6C3702AFEE0A900E27324 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		1BE6C3712AFEE0AE00E27324 /* View */ = {
