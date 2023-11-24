@@ -36,8 +36,6 @@ struct OnboardingView: View {
                         if currentPage < onboardingData.count - 1 {
                             currentPage += 1
                         } else {
-                            // Handle completion, navigate to the next screen, etc.
-                            // For now, let's just print a message.
                             dismiss()
                         }
                     }

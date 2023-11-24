@@ -34,7 +34,6 @@ struct AddButton: View {
             addAction()
         }
         .onLongPressGesture(minimumDuration: 0.2) {
-            print("press")
             withAnimation(.linear(duration: 0.1)) {
                 opacityState = 0.2
             }
