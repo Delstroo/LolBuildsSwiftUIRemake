@@ -53,7 +53,6 @@ struct BuildsCell: View {
                         fetchChampionImage(url: imageURL)
                     }
                     if let items = buildController.selectedItem {
-                        print("\(items.name) at position \(buildController.selectedItemButton)")
                         let imageURL = "\(URL.itemImageURL)\(items.image.full)"
                         fetchItemImage(url: imageURL, index: buildController.selectedItemButton)
                     }
@@ -165,7 +164,6 @@ struct BuildsCell: View {
         .matchedGeometryEffect(id: "item_\(index)_\(build.id)", in: animation, isSource: buildController.selectedItemButton == index)
         .onAppear {
             if let items = build.items[index] {
-                print(items.name)
                 let imageURL = "\(URL.itemImageURL)\(items.image.full)"
                 fetchItemImage(url: imageURL, index: index)
             }
