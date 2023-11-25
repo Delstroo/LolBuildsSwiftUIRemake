@@ -85,8 +85,6 @@ struct ChampionDetailImageView: View {
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
         }
         .onAppear {
-            // Fetch images when the view appears
-
             let sortedSkins = champion.skins.sorted { $0.id < $1.id }
             let dispatchGroup = DispatchGroup()
             var imageResults: [ImageWithOrder] = []
@@ -102,7 +100,6 @@ struct ChampionDetailImageView: View {
             }
 
             dispatchGroup.notify(queue: .main) {
-                // All images have been fetched and ordered
                 let sortedImages = imageResults.sorted { $0.order < $1.order }
                 championImages = sortedImages.compactMap { $0.image }
             }
