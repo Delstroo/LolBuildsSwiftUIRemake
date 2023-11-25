@@ -11,6 +11,7 @@ struct ChampionDetailView: View {
     @State var champion: ChampionData?
     @State var championInfo: ChampionInfo
     @StateObject private var viewModel: ChampionDetailViewModel = ChampionDetailViewModel()
+    @State private var selectedTab = 0
     
     var body: some View {
         ScrollView {
@@ -40,12 +41,31 @@ struct ChampionDetailView: View {
                                     )
                             }
                         })
-                            
-                            Text(champion.lore)
-                                .font(.headline.weight(.medium))
-                                .foregroundStyle(Color.secondary)
-                                .padding()
+                        
+                        Text(champion.lore)
+                            .font(.headline.weight(.medium))
+                            .foregroundStyle(Color.secondary)
+                            .padding(6)
+                    }
+                    
+                    Picker("Tips", selection: $selectedTab) {
+                        Text("Ally").tag(0)
+                        Text("Enemy").tag(1)
+                    }
+                    .pickerStyle(.segmented)
+                    .frame(width: 200)
+                    
+                    if selectedTab == 0 {
+                        ForEach(champion.allytips, id: \.self) { tip in
+                            Text(champion.allytips.isEmpty ? "Im sorry, there is no tip." : tip)
+                                .padding(6)
                         }
+                    } else {
+                        ForEach(champion.enemytips, id: \.self) { tip in
+                            Text(champion.enemytips.isEmpty ? "Im sorry, there is no tip." : tip)
+                                .padding(6)
+                        }
+                    }
                     // MARK: DropDowns
                     VStack(alignment: .leading) {
                         ChampionDetailViewDropDown(champion: champion)
