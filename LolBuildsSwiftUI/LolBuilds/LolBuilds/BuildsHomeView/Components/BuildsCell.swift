@@ -15,8 +15,8 @@ struct BuildsCell: View {
     @State var build: Build
     @State private var itemImages: [UIImage?] = Array(repeating: nil, count: 6)
     @State private var championImage: UIImage?
-    @State private var selectedItemButton: Int = 0 // To store the selected item button
-    @State private var selectedChampionButton: Int = 0 // To store the selected champion
+    @State private var selectedItemButton: Int = 0
+    @State private var selectedChampionButton: Int = 0
     @State var isZoomed = false
     @State private var editedTitle: String = ""
     @State private var selectedBuildIndex: Build?
@@ -44,7 +44,6 @@ struct BuildsCell: View {
         }
         .onChange(of: buildController.shouldUpdateBuild) { newValue in
             if index == buildController.selectedBuildIndex {
-                // Add your logic to refresh the view when shouldUpdate changes to true
                 buildController.builds = []
                 buildController.loadFromPersistenceStore()
                 if newValue {

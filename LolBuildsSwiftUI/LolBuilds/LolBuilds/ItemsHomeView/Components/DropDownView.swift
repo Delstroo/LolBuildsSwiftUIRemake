@@ -23,10 +23,6 @@ struct DropDown: View {
                     }
                 }) {
                     ZStack {
-//                        RoundedRectangle(cornerRadius: 12)
-//                            .frame(width: 54, height: 54)
-//                            .foregroundColor(.blue)
-                        
                         HStack {
                             Text(selectedCategory)
                                 .font(.title3.weight(.semibold))

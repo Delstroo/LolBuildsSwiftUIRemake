@@ -50,10 +50,8 @@ extension URL {
 
 extension String {
     func formattedString() -> String {
-        // Remove special characters and spaces
         var cleanedString = self.replacingOccurrences(of: "[^a-zA-Z0-9]", with: "", options: .regularExpression)
         
-        // Capitalize the first letter and make the rest lowercase
         if let firstChar = cleanedString.first {
             let restOfString = String(cleanedString.dropFirst()).lowercased()
             cleanedString = String(firstChar) + restOfString
@@ -72,12 +70,10 @@ extension String {
 extension String {
     func replaceCapitalLetters() -> String {
         do {
-            // Add a space after a capital letter if it is followed by a digit
             let regex = try NSRegularExpression(pattern: "([A-Z])([0-9])", options: .caseInsensitive)
             let range = NSRange(self.startIndex..<self.endIndex, in: self)
             let modifiedString = regex.stringByReplacingMatches(in: self, range: range, withTemplate: "$1 $2")
             
-            // Then, add a space after a digit if it is followed by a capital letter
             let modifiedRange = NSRange(modifiedString.startIndex..<modifiedString.endIndex, in: modifiedString)
             let finalString = regex.stringByReplacingMatches(in: modifiedString, range: modifiedRange, withTemplate: "$1 $2")
             
