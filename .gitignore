@@ -5,6 +5,7 @@ DerivedData/
 /*.xcworkspace
 /*.xcuserdatad
 /*.xcuserdata
+/*.UserInterfaceState.xcuserstate
 
 # Swift Package Manager
 /*.swiftpm
