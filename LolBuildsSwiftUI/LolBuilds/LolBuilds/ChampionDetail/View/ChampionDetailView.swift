@@ -19,6 +19,7 @@ struct ChampionDetailView: View {
                     ChampionDetailImageView(champion: champion)
                         .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width / 1.29)
                     VStack {
+                        // MARK: Name & Title
                             Text(champion.name)
                                 .font(.system(size: 32).weight(.bold))
                                 .foregroundStyle(Color.label)
@@ -29,6 +30,7 @@ struct ChampionDetailView: View {
                                 .foregroundStyle(Color.secondaryLabel)
                                 .padding(.leading)
                         
+                        // MARK: Champion tags ex: [Assasin, Marksman]
                         HStack(spacing: 8, content: {
                             ForEach(champion.tags, id: \.self) { tag in
                                 Text("  \(tag)  ")
@@ -40,12 +42,14 @@ struct ChampionDetailView: View {
                                     )
                             }
                         })
-                            
-                            Text(champion.lore)
-                                .font(.headline.weight(.medium))
-                                .foregroundStyle(Color.secondary)
-                                .padding()
-                        }
+                        
+                        // MARK: Champion Lore
+                        Text(champion.lore)
+                            .font(.headline.weight(.medium))
+                            .foregroundStyle(Color.secondary)
+                            .padding()
+                    }
+                    
                     // MARK: DropDowns
                     VStack(alignment: .leading) {
                         ChampionDetailViewDropDown(champion: champion)
