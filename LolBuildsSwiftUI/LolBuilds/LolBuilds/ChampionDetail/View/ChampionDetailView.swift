@@ -43,13 +43,15 @@ struct ChampionDetailView: View {
                                     )
                             }
                         })
-                      
+                        
+                        // MARK: Champion Lore
                         Text(champion.lore)
                             .font(.headline.weight(.medium))
                             .foregroundStyle(Color.secondary)
                             .padding(6)
                     }
                     
+                    // MARK: Champion Ally and Enemy tips
                     Picker("Tips", selection: $selectedTab) {
                         Text("Ally").tag(0)
                         Text("Enemy").tag(1)
