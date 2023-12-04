@@ -19,6 +19,8 @@ struct ChampionDetailImageView: View {
     var champion: ChampionData
     @State private var championImages: [UIImage?] = [] // Array to hold images for each skin
     @State private var selectedTabIndex = 0
+    @State private var shouldFullScreen = false
+    @State private var selectedImage = 0
 
     var body: some View {
         ZStack {
@@ -43,6 +45,9 @@ struct ChampionDetailImageView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fill)
                                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width / 1.69)
+                                    .fullScreenCover(isPresented: $shouldFullScreen, content: {
+                                        ChampionDetailImageViewFull(image: Image(uiImage: championImages[selectedTabIndex]!))
+                                    })
                                 
                                 
                                 
@@ -78,6 +83,12 @@ struct ChampionDetailImageView: View {
                             }
                         }
 
+                    }
+                    .onTapGesture {
+                        print("Tapped index:", index)
+                        selectedImage = index
+                        print("Selected image after tap:", selectedImage)
+                        shouldFullScreen.toggle()
                     }
                     .tag(index)
                 }
