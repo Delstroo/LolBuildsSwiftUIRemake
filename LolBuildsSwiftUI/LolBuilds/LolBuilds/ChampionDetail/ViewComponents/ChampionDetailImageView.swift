@@ -19,6 +19,8 @@ struct ChampionDetailImageView: View {
     var champion: ChampionData
     @State private var championImages: [UIImage?] = [] // Array to hold images for each skin
     @State private var selectedTabIndex = 0
+    @State private var shouldFullScreen = false
+    @State private var selectedImage = 0
 
     var body: some View {
         ZStack {
@@ -29,6 +31,7 @@ struct ChampionDetailImageView: View {
 
             TabView(selection: $selectedTabIndex) {
                 ForEach(championImages.indices, id: \.self) { index in
+                    let currentIndex = index
                     ZStack {
                         ZStack(alignment: .center) {
                             Image(uiImage: championImages[index] ?? UIImage()) // Display the fetched image
@@ -43,9 +46,7 @@ struct ChampionDetailImageView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fill)
                                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width / 1.69)
-                                
-                                
-                                
+                                                                
                                 ZStack {
                                     if champion.skins[index].name == "default" {
                                         Text("  Default  ")
@@ -79,11 +80,21 @@ struct ChampionDetailImageView: View {
                         }
 
                     }
-                    .tag(index)
+                    .onTapGesture {
+                        print("Tapped index:", currentIndex)
+                        selectedImage = currentIndex
+                        print("Selected image after tap:", selectedImage)
+                        UserDefaults().set(currentIndex, forKey: "selectedImage")
+                        shouldFullScreen.toggle()
+                    }
+                    .tag(currentIndex)
                 }
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
         }
+        .fullScreenCover(isPresented: $shouldFullScreen, content: {
+            ChampionDetailImageViewFull(image: Image(uiImage: championImages[UserDefaults.standard.integer(forKey: "selectedImage")]!))
+        })
         .onAppear {
             let sortedSkins = champion.skins.sorted { $0.id < $1.id }
             let dispatchGroup = DispatchGroup()
