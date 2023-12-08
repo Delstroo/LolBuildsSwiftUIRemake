@@ -9,16 +9,13 @@ import SwiftUI
 
 struct ChampionDetailImageViewFull: View {
     @Environment(\.dismiss) var dismiss
-    var image: Image
+    var images: [UIImage?]
+    @State var selectedIndex: Int
     
     var body: some View {
+//        let images = images.map { Image(uiImage: $0!) }
         ZStack(alignment: .topLeading) {
-            ZoomableScrollView {
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-            }
-
+            
             Button(action: {
                 dismiss()
             }) {
@@ -29,8 +26,43 @@ struct ChampionDetailImageViewFull: View {
                     .padding(10)
             }
             .padding()
+            // Handle displaying the images using selectedIndex and images array
+            // You can use selectedIndex and images to show the selected image and others accordingly
+            // Example code:
+            VStack {
+                TabView(selection: $selectedIndex) {
+                    ForEach(images.indices, id: \.self) { index in
+                        if let image = images[index] {
+                            ZoomableScrollView {
+                                Image(uiImage: image)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(maxWidth: .infinity)
+                            }
+                            .tag(index)
+                        }
+                    }
+                }
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+                .preferredColorScheme(.dark)
+            }
+            .gesture(dragGesture)
+            .preferredColorScheme(.dark)
         }
-        .preferredColorScheme(.dark)
+    }
+    
+    // Drag gesture to handle swiping between images
+    var dragGesture: some Gesture {
+        DragGesture()
+            .onEnded { value in
+                let threshold: CGFloat = 100 // Threshold to consider swipe
+                if value.translation.width > threshold {
+                    selectedIndex = max(selectedIndex - 1, 0) // Swipe right to view previous image
+                } else if value.translation.width < -threshold {
+                    selectedIndex = min(selectedIndex + 1, images.count - 1) // Swipe left to view next image
+                }
+            }
     }
 }
 
@@ -116,6 +148,10 @@ struct ZoomableScrollView<Content: View>: UIViewRepresentable {
 }
 
 #Preview {
-    ChampionDetailImageViewFull(image: Image("Aatrox"))
+    ChampionDetailImageViewFull(images: [
+        UIImage(named: "Aatrox"),
+        UIImage(named: "Champion"),
+        UIImage(named: "Aatrox"),
+    ], selectedIndex: 1)
         .edgesIgnoringSafeArea(.all)
 }
