@@ -57,6 +57,11 @@ struct ZoomableScrollView<Content: View>: UIViewRepresentable {
         hostedView.frame = scrollView.bounds
         scrollView.addSubview(hostedView)
         
+        // Double tap gesture recognizer for zooming
+        let doubleTapGesture = UITapGestureRecognizer(target: context.coordinator, action: #selector(context.coordinator.handleDoubleTap(_:)))
+        doubleTapGesture.numberOfTapsRequired = 2
+        scrollView.addGestureRecognizer(doubleTapGesture)
+        
         return scrollView
     }
     
@@ -81,6 +86,31 @@ struct ZoomableScrollView<Content: View>: UIViewRepresentable {
         
         func viewForZooming(in scrollView: UIScrollView) -> UIView? {
             return hostingController.view
+        }
+        
+        @objc func handleDoubleTap(_ recognizer: UITapGestureRecognizer) {
+            guard let scrollView = recognizer.view as? UIScrollView else { return }
+
+            let currentZoomScale = scrollView.zoomScale
+            if currentZoomScale > scrollView.minimumZoomScale {
+                scrollView.setZoomScale(scrollView.minimumZoomScale, animated: true)
+            } else {
+                let zoomRect = zoomRectForScale(scale: scrollView.maximumZoomScale / 7.50, center: recognizer.location(in: scrollView))
+                scrollView.zoom(to: zoomRect, animated: true)
+            }
+        }
+        
+        func zoomRectForScale(scale: CGFloat, center: CGPoint) -> CGRect {
+            var zoomRect = CGRect.zero
+            if let imageView = self.hostingController.view {
+                zoomRect.size.height = imageView.frame.size.height / scale
+                zoomRect.size.width = imageView.frame.size.width / scale
+
+                let newCenter = imageView.convert(center, from: hostingController.view)
+                zoomRect.origin.x = newCenter.x - (zoomRect.size.width / 2.0)
+                zoomRect.origin.y = newCenter.y - (zoomRect.size.height / 2.0)
+            }
+            return zoomRect
         }
     }
 }
