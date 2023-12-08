@@ -93,8 +93,9 @@ struct ChampionDetailImageView: View {
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
         }
         .fullScreenCover(isPresented: $shouldFullScreen, content: {
-            ChampionDetailImageViewFull(image: Image(uiImage: championImages[UserDefaults.standard.integer(forKey: "selectedImage")]!))
+            ChampionDetailImageViewFull(images: championImages, selectedIndex:UserDefaults.standard.integer(forKey: "selectedImage"))
         })
+        
         .onAppear {
             let sortedSkins = champion.skins.sorted { $0.id < $1.id }
             let dispatchGroup = DispatchGroup()

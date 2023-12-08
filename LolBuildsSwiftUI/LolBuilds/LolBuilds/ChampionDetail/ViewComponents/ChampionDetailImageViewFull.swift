@@ -9,16 +9,32 @@ import SwiftUI
 
 struct ChampionDetailImageViewFull: View {
     @Environment(\.dismiss) var dismiss
-    var image: Image
+    var images: [UIImage?]
+    @State var selectedIndex: Int
     
     var body: some View {
         ZStack(alignment: .topLeading) {
-            ZoomableScrollView {
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
+            VStack {
+                TabView(selection: $selectedIndex) {
+                    ForEach(images.indices, id: \.self) { index in
+                        if let image = images[index] {
+                            ZoomableScrollView {
+                                Image(uiImage: image)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(maxWidth: .infinity)
+                            }
+                            .tag(index)
+                        }
+                    }
+                }
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+                .preferredColorScheme(.dark)
             }
-
+            .preferredColorScheme(.dark)
+            
+            
             Button(action: {
                 dismiss()
             }) {
@@ -30,7 +46,6 @@ struct ChampionDetailImageViewFull: View {
             }
             .padding()
         }
-        .preferredColorScheme(.dark)
     }
 }
 
@@ -116,6 +131,10 @@ struct ZoomableScrollView<Content: View>: UIViewRepresentable {
 }
 
 #Preview {
-    ChampionDetailImageViewFull(image: Image("Aatrox"))
+    ChampionDetailImageViewFull(images: [
+        UIImage(named: "Aatrox"),
+        UIImage(named: "Champion"),
+        UIImage(named: "Aatrox"),
+    ], selectedIndex: 1)
         .edgesIgnoringSafeArea(.all)
 }
