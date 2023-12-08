@@ -11,7 +11,8 @@ struct ChampionDetailImageViewFull: View {
     @Environment(\.dismiss) var dismiss
     var images: [UIImage?]
     @State var selectedIndex: Int
-    
+    @GestureState private var offset = CGSize.zero
+
     var body: some View {
         ZStack(alignment: .topLeading) {
             VStack {
@@ -31,9 +32,18 @@ struct ChampionDetailImageViewFull: View {
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
                 .preferredColorScheme(.dark)
+                .offset(y: offset.height) // Apply the offset based on drag gesture
+
+                // Add gesture for dragging down to dismiss
+                .gesture(DragGesture().updating($offset) { value, state, _ in
+                    state = value.translation
+                }.onEnded { value in
+                    if value.translation.height > 100 {
+                        dismiss() // Close the screen if dragged down beyond threshold
+                    }
+                })
             }
             .preferredColorScheme(.dark)
-            
             
             Button(action: {
                 dismiss()
