@@ -13,22 +13,7 @@ struct ChampionDetailImageViewFull: View {
     @State var selectedIndex: Int
     
     var body: some View {
-//        let images = images.map { Image(uiImage: $0!) }
         ZStack(alignment: .topLeading) {
-            
-            Button(action: {
-                dismiss()
-            }) {
-                Image(systemName: "xmark.circle.fill")
-                    .resizable()
-                    .frame(width: 32, height: 32)
-                    .foregroundColor(.white.opacity(0.33))
-                    .padding(10)
-            }
-            .padding()
-            // Handle displaying the images using selectedIndex and images array
-            // You can use selectedIndex and images to show the selected image and others accordingly
-            // Example code:
             VStack {
                 TabView(selection: $selectedIndex) {
                     ForEach(images.indices, id: \.self) { index in
@@ -47,22 +32,20 @@ struct ChampionDetailImageViewFull: View {
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
                 .preferredColorScheme(.dark)
             }
-            .gesture(dragGesture)
             .preferredColorScheme(.dark)
-        }
-    }
-    
-    // Drag gesture to handle swiping between images
-    var dragGesture: some Gesture {
-        DragGesture()
-            .onEnded { value in
-                let threshold: CGFloat = 100 // Threshold to consider swipe
-                if value.translation.width > threshold {
-                    selectedIndex = max(selectedIndex - 1, 0) // Swipe right to view previous image
-                } else if value.translation.width < -threshold {
-                    selectedIndex = min(selectedIndex + 1, images.count - 1) // Swipe left to view next image
-                }
+            
+            
+            Button(action: {
+                dismiss()
+            }) {
+                Image(systemName: "xmark.circle.fill")
+                    .resizable()
+                    .frame(width: 32, height: 32)
+                    .foregroundColor(.white.opacity(0.33))
+                    .padding(10)
             }
+            .padding()
+        }
     }
 }
 
