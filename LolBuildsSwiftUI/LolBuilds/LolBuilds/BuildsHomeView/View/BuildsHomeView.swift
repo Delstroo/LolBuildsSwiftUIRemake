@@ -42,6 +42,12 @@ struct BuildsHomeView: View, AddActionDelegate {
                     .navigationBarHidden(true)
                     
                 }
+                .onChange(of: buildController.builds.count, perform: { newValue in
+                    print(buildController.builds.count)
+                })
+                .onChange(of: buildController.builds, perform: { newValue in
+                    print(buildController.builds)
+                })
                 .sheet(isPresented: $isItemSelectionPresented, content: {
                     ItemHomeView(isModallyPresented: true, button: buildController.selectedItemButton)
                 })
