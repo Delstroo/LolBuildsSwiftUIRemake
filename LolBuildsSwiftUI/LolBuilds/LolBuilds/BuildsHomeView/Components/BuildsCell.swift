@@ -15,6 +15,7 @@ struct BuildsCell: View {
     @State var build: Build
     @State private var itemImages: [UIImage?] = Array(repeating: nil, count: 6)
     @State private var championImage: UIImage?
+    @State private var fullChampionImage: UIImage?
     @State private var selectedItemButton: Int = 0
     @State private var selectedChampionButton: Int = 0
     @State var isZoomed = false
@@ -174,21 +175,37 @@ struct BuildsCell: View {
         Button(action: {
             championAction()
         }) {
-            if let championImage = championImage {
+            if let championImage = isZoomed ? fullChampionImage : championImage {
                 ZStack {
-                    Image(uiImage: championImage)
-                        .resizable()
-                        .blur(radius: 10)
-                        .opacity(0.8)
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 140, height: 140)
-                        .cornerRadius(23)
-                    
-                    Image(uiImage: championImage)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 120, height: 120)
-                        .cornerRadius(20)
+                    if isZoomed {
+                        Image(uiImage: championImage)
+                            .resizable()
+                            .blur(radius: 10)
+                            .opacity(0.8)
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: UIScreen.main.bounds.width + 10)
+                            .cornerRadius(23)
+                        
+                        Image(uiImage: championImage)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: UIScreen.main.bounds.width)
+                            .cornerRadius(20)
+                    } else {
+                        Image(uiImage: championImage)
+                            .resizable()
+                            .blur(radius: 10)
+                            .opacity(0.8)
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 140, height: 140)
+                            .cornerRadius(23)
+                        
+                        Image(uiImage: championImage)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 120, height: 120)
+                            .cornerRadius(20)
+                    }
                 }
             } else {
                 Image(systemName: "person")
@@ -202,6 +219,12 @@ struct BuildsCell: View {
         .onAppear {
             if let champion = build.championButton {
                 let imageURL = "\(URL.championImageURL)\(champion.image.full)"
+                fetchChampionImage(url: imageURL)
+            }
+        }
+        .onAppear {
+            if let champion = build.championButton {
+                let imageURL = "\(URL.championSplashURL)\(champion.image.full.replacingOccurrences(of: ".png", with: "_0.jpg"))"
                 fetchChampionImage(url: imageURL)
             }
         }
@@ -230,7 +253,11 @@ struct BuildsCell: View {
             case .success(let imageData):
                 DispatchQueue.main.async {
                     if let image = UIImage(data: imageData) {
-                        championImage = image
+                        if imageURL.absoluteString.contains("_0.jpg") {
+                            fullChampionImage = image
+                        } else {
+                            championImage = image
+                        }
                     }
                 }
             case .failure(let error):

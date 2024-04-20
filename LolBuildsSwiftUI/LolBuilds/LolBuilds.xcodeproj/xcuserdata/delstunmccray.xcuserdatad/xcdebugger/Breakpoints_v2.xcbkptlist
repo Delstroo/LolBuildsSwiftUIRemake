@@ -39,102 +39,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0D116283-387B-4FE2-81F1-AABB4FCAED03"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LolBuilds/BuildsHomeView/ViewModel/BuildsViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "deleteBuild(build:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0D116283-387B-4FE2-81F1-AABB4FCAED03 - 441f128849fffc48"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LolBuilds.BuildController.deleteBuild(build: LolBuilds.Build) -&gt; ()"
-                  moduleName = "LolBuilds"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/delstunmccray/Documents/iOSDev/LolBuildsSwiftUIRemake/LolBuildsSwiftUI/LolBuilds/LolBuilds/BuildsHomeView/ViewModel/BuildsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  uuid = "0D116283-387B-4FE2-81F1-AABB4FCAED03 - 441f128849fffc48"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LolBuilds.BuildController.deleteBuild(build: LolBuilds.Build) -&gt; ()"
-                  moduleName = "LolBuilds"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/delstunmccray/Documents/iOSDev/LolBuildsSwiftUIRemake/LolBuildsSwiftUI/LolBuilds/LolBuilds/BuildsHomeView/ViewModel/BuildsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "292">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0793AF36-6086-4289-AF37-0F8DBE50AD30"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LolBuilds/BuildsHomeView/ViewModel/BuildsViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "createBuild(title:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0793AF36-6086-4289-AF37-0F8DBE50AD30 - 59fefedca2c7fff"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LolBuilds.BuildController.createBuild(title: Swift.String) -&gt; ()"
-                  moduleName = "LolBuilds"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/delstunmccray/Documents/iOSDev/LolBuildsSwiftUIRemake/LolBuildsSwiftUI/LolBuilds/LolBuilds/BuildsHomeView/ViewModel/BuildsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "84">
-               </Location>
-               <Location
-                  uuid = "0793AF36-6086-4289-AF37-0F8DBE50AD30 - 59fefedca2c7fff"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LolBuilds.BuildController.createBuild(title: Swift.String) -&gt; ()"
-                  moduleName = "LolBuilds"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/delstunmccray/Documents/iOSDev/LolBuildsSwiftUIRemake/LolBuildsSwiftUI/LolBuilds/LolBuilds/BuildsHomeView/ViewModel/BuildsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "288">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "78111AE2-5B44-4B2D-8E11-A88D2C7D2908"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -178,6 +82,52 @@
                   offsetFromSymbolStart = "2836">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "255B11AF-E318-45EC-9186-8D9140CD4508"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LolBuilds/BuildsHomeView/Components/BuildsCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "260"
+            endingLineNumber = "260">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB54D4EE-2158-4210-BA6B-6048A6266A8B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LolBuilds/BuildsHomeView/Components/BuildsCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "273"
+            endingLineNumber = "273"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99E633BF-06C5-41E5-8E28-0D07AEEC1CB3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LolBuilds/BuildsHomeView/Components/BuildsCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "228"
+            endingLineNumber = "228"
+            landmarkName = "fetchItemImage(url:index:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
